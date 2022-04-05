@@ -12,6 +12,7 @@ TagManager:
   - CheckPoint
   - Undefined
   - Bullet
+  - Enemy
   layers:
   - Default
   - TransparentFX
