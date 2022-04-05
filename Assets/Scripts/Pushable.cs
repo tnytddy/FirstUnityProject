@@ -10,6 +10,7 @@ public class Pushable : MonoBehaviour
     private void OnControllerColliderHit(ControllerColliderHit collision) {
         Rigidbody box = collision.collider.attachedRigidbody;
 
+
         if(box != null) {
             Vector3 forceDirection = collision.gameObject.transform.position - transform.position;
             forceDirection.y = 0;

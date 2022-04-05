@@ -10,7 +10,7 @@ public class DestroyEnemy : MonoBehaviour
     // Start is called before the first frame update
     private void OnCollisionEnter(Collision col) {
         if(col.gameObject.tag == "Bullet") {
-            enemy_health = enemy_health - 1``1``;
+            enemy_health = enemy_health - 1;
             Destroy(col.gameObject);
             if (enemy_health == 0) {
             points = points + 5;
