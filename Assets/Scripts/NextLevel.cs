@@ -5,11 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
+
+    public CheckPoints script;
+
     private void OnTriggerEnter(Collider col) {
 
         if(col.gameObject.tag == "Player") {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            if(GetComponent<MeshRenderer>().enabled == true)
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
+        
+
     }
+
+    
+    
 }
