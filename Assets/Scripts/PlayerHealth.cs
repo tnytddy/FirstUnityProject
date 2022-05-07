@@ -5,16 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-   private void OnCollisionEnter(Collision col) {
+
+    
+    private void OnCollisionEnter(Collision col) {
 
        if(col.gameObject.tag == "Enemy" || col.gameObject.tag == "Poison") {
            Death();
-       }
+        }
+
 
    }
 
    void Death() {
-
        GetComponent<MeshRenderer>().enabled = false;
        GetComponent<Rigidbody>().isKinematic = true;
        GetComponent<PlayerMovement>().enabled = false;
@@ -28,4 +30,5 @@ public class PlayerHealth : MonoBehaviour
        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
    }
+
 }

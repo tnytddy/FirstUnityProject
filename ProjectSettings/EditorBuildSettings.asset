@@ -6,9 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartScreen.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/HowToScreen.unity
+    guid: 20775b0db97faa649a8cb7ece3431224
+  - enabled: 1
+    path: Assets/Scenes/CreditsScreen.unity
+    guid: 56185fec9eaa6cf45af8753d6650120b
+  - enabled: 1
     path: Assets/Scenes/Level-1.unity
     guid: 1c974a05500a5004bb25e63f2a50f2f9
   - enabled: 1
     path: Assets/Scenes/Level-2.unity
     guid: 5c9703b84cf2c714595523b51a1a0774
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: bda83348fec73e346ab3a00db7fd1867
+  - enabled: 0
+    path: Assets/Scenes/LoseScreen.unity
+    guid: 532bd320c2f803d489d8e3bac6517b5f
   m_configObjects: {}

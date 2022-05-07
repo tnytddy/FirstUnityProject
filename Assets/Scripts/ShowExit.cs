@@ -10,7 +10,7 @@ public class ShowExit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(script.checks == 4) {
+        if(script.checks >= 4) {
             GetComponent<MeshRenderer>().enabled = true;
         }
     }
