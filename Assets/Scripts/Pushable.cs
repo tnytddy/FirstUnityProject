@@ -5,17 +5,23 @@ using UnityEngine;
 public class Pushable : MonoBehaviour
 {
 
-    [SerializeField] private float forceAmt;
+    private float forceAmt;
 
-    private void OnControllerColliderHit(ControllerColliderHit collision) {
-        Rigidbody box = collision.collider.attachedRigidbody;
+    //creates rigid body for box
+
+    private void OnControllerEnter(Collision col) {
+        Rigidbody box = col.collider.attachedRigidbody;
 
 
-        if(box != null) {
-            Vector3 forceDirection = collision.gameObject.transform.position - transform.position;
+    //checks if boc object collided with is not null and that it is being touched by player
+
+        if(box != null && col.gameObject.tag == "Player") {
+            Vector3 forceDirection = col.gameObject.transform.position - transform.position;
             forceDirection.y = 0;
             forceDirection.Normalize();
             box.AddForceAtPosition(forceDirection * forceAmt, transform.position, ForceMode.Impulse);
         }
     }
+
+    //applies force to player in order to push the box
 }

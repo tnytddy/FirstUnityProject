@@ -1754,7 +1754,7 @@ GameObject:
   m_Component:
   - component: {fileID: 617900180}
   m_Layer: 0
-  m_Name: Bulletemitter
+  m_Name: Blaster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5235,7 +5235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 8
   rotSpeed: 100
-  onGround: 1
+  touchingGround: 1
 --- !u!54 &1399964354
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5343,7 +5343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f6605b52f0c874488fa5ec6bb0062fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletEmitter: {fileID: 617900179}
+  gun: {fileID: 617900179}
   bullet: {fileID: 1459766587781073465, guid: e5d7dbfce8ea0ac47a322754ee0cd3b7, type: 3}
   bulletSpeed: 700
   player: {fileID: 1399964352}

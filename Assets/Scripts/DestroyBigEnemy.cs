@@ -5,7 +5,6 @@ using UnityEngine;
 public class DestroyBigEnemy : MonoBehaviour
 {
     int enemy_health = 10;
-    public int points = 0;
     public int enemys_remaining = 2;
 
     // Start is called before the first frame update
@@ -15,7 +14,6 @@ public class DestroyBigEnemy : MonoBehaviour
             Destroy(col.gameObject);
             if (enemy_health == 0) {
             enemys_remaining = enemys_remaining - 1;
-            points = points + 15;
             Destroy(gameObject);
             Debug.Log("Enemies: " + enemys_remaining);
             }

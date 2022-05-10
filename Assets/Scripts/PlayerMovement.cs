@@ -6,8 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
    Rigidbody player;
    public float moveSpeed = 8.0f;
-   public float rotSpeed = 100.0f;
-   public bool onGround = true;
+   public float rotSpeed = 90.0f;
+   public bool touchingGround = true;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
        
+        //sets movement for forward and backward, as well as turning
+
         float translation = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
         float rotation = Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime;
 
@@ -26,21 +28,20 @@ public class PlayerMovement : MonoBehaviour
         transform.Rotate(0, rotation, 0);
 
         
+        //sets jump movement and checks in player is in the air to prevent another jump
 
-        //player.velocity = new Vector3(Input.GetAxis("Horizontal") * 12f, player.velocity.y, Input.GetAxis("Vertical") * 12f);
-
-        if(Input.GetButtonDown("Jump") && onGround) {
+        if(Input.GetButtonDown("Jump") && touchingGround) {
             player.AddForce(new Vector3(0, 7, 0), ForceMode.Impulse);
-            onGround = false;
+            touchingGround = false;
         }
-
-        //onGround = true;
 
     }
 
+    //resets touhcingGround back to true to allow jump
+
     private void OnCollisionEnter(Collision collision) {
         if(collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Floor" || collision.gameObject.tag == "Moving Box") {
-            onGround = true;
+            touchingGround = true;
         }
     }
 }

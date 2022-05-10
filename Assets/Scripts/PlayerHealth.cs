@@ -7,25 +7,31 @@ public class PlayerHealth : MonoBehaviour
 {
 
     
+    //collision with enemy or lava invokes death
+
     private void OnCollisionEnter(Collision col) {
 
        if(col.gameObject.tag == "Enemy" || col.gameObject.tag == "Poison") {
-           Death();
+           PlayerDeath();
         }
 
 
    }
 
-   void Death() {
+   //function for death disables and enables things to prohibit player movement after death
+
+   void PlayerDeath() {
        GetComponent<MeshRenderer>().enabled = false;
        GetComponent<Rigidbody>().isKinematic = true;
        GetComponent<PlayerMovement>().enabled = false;
        GetComponent<Shooting>().enabled = false;
-       Invoke(nameof(LevelRestart), 3.0f);
+       Invoke(nameof(Restart), 3.0f);
 
    }
 
-   void LevelRestart() {
+    //invoke is used to make the scene appear with a delay, restart function gets name of the active scene
+
+   void Restart() {
 
        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
