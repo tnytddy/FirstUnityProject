@@ -558,6 +558,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4373716779252987019, guid: 28430d269da14844f8647f373df1d482, type: 3}
+      propertyPath: points.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373716779252987019, guid: 28430d269da14844f8647f373df1d482, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 129922376}
+    - target: {fileID: 4373716779252987019, guid: 28430d269da14844f8647f373df1d482, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 1150436806}
+    - target: {fileID: 4373716779252987019, guid: 28430d269da14844f8647f373df1d482, type: 3}
       propertyPath: movingPoints.Array.data[0]
       value: 
       objectReference: {fileID: 129922376}
@@ -1479,7 +1491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea07c503a92f904689b4d9afcb06d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingPoints:
+  points:
   - {fileID: 142318071}
   - {fileID: 1405295466}
   speed: 3
@@ -1487,6 +1499,11 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1183091703625825220, guid: 8e084b180021b4141a01120b6a029685, type: 3}
   m_PrefabInstance: {fileID: 761034169}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &514303428 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2890172464562052698, guid: 4a44f1e42ac6ac544b98ac42e0883662, type: 3}
+  m_PrefabInstance: {fileID: 2890172464584509692}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &517920692 stripped
 Transform:
@@ -1605,7 +1622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea07c503a92f904689b4d9afcb06d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingPoints:
+  points:
   - {fileID: 864345142}
   - {fileID: 1971938588}
   speed: 3
@@ -2526,7 +2543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea07c503a92f904689b4d9afcb06d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingPoints:
+  points:
   - {fileID: 1250573630}
   - {fileID: 539385453}
   speed: 3
@@ -2716,7 +2733,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 864345142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.05, y: 6.3199997, z: 182.89874}
+  m_LocalPosition: {x: -4.19, y: 6.3199997, z: 182.89874}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 759116836}
@@ -3184,7 +3201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea07c503a92f904689b4d9afcb06d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingPoints:
+  points:
   - {fileID: 2132577078}
   - {fileID: 1879365976}
   speed: 5
@@ -3321,7 +3338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea07c503a92f904689b4d9afcb06d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingPoints:
+  points:
   - {fileID: 456641738}
   - {fileID: 663091524}
   speed: 3
@@ -3394,7 +3411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea07c503a92f904689b4d9afcb06d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingPoints:
+  points:
   - {fileID: 1985599907}
   - {fileID: 1468770813}
   speed: 4
@@ -3449,7 +3466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea07c503a92f904689b4d9afcb06d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingPoints:
+  points:
   - {fileID: 696515230}
   - {fileID: 692039803}
   speed: 3
@@ -3470,7 +3487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea07c503a92f904689b4d9afcb06d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingPoints:
+  points:
   - {fileID: 1472611559}
   - {fileID: 423110742}
   speed: 4
@@ -3491,9 +3508,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea07c503a92f904689b4d9afcb06d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingPoints:
-  - {fileID: 937874924}
+  points:
   - {fileID: 1768445064}
+  - {fileID: 937874924}
   speed: 3
 --- !u!1001 &1083580375
 PrefabInstance:
@@ -3714,6 +3731,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4373716779252987019, guid: 28430d269da14844f8647f373df1d482, type: 3}
+      propertyPath: points.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373716779252987019, guid: 28430d269da14844f8647f373df1d482, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 420840333}
+    - target: {fileID: 4373716779252987019, guid: 28430d269da14844f8647f373df1d482, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 2104923484}
     - target: {fileID: 4373716779252987019, guid: 28430d269da14844f8647f373df1d482, type: 3}
       propertyPath: movingPoints.Array.data[0]
       value: 
@@ -4339,7 +4368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea07c503a92f904689b4d9afcb06d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingPoints:
+  points:
   - {fileID: 339021063}
   - {fileID: 1793371676}
   speed: 7
@@ -4861,7 +4890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea07c503a92f904689b4d9afcb06d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingPoints:
+  points:
   - {fileID: 281421363}
   - {fileID: 660330429}
   speed: 5
@@ -5067,6 +5096,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 535682838464670743, guid: ff3686d4d1d6bf64ca209704ee67ea9e, type: 3}
   m_PrefabInstance: {fileID: 613518726}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1378223843 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2890172464234655151, guid: 4a44f1e42ac6ac544b98ac42e0883662, type: 3}
+  m_PrefabInstance: {fileID: 1431428080}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1395002131
 GameObject:
@@ -5553,6 +5587,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2890172464604893076, guid: 4a44f1e42ac6ac544b98ac42e0883662, type: 3}
+      propertyPath: points.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2890172464604893076, guid: 4a44f1e42ac6ac544b98ac42e0883662, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 1378223843}
+    - target: {fileID: 2890172464604893076, guid: 4a44f1e42ac6ac544b98ac42e0883662, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 2138730133}
     - target: {fileID: 2890172464604893077, guid: 4a44f1e42ac6ac544b98ac42e0883662, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -5737,7 +5783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea07c503a92f904689b4d9afcb06d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingPoints:
+  points:
   - {fileID: 307847795}
   - {fileID: 1619452323}
   speed: 3
@@ -5896,7 +5942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea07c503a92f904689b4d9afcb06d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingPoints:
+  points:
   - {fileID: 1027581192}
   - {fileID: 1153701796}
   speed: 3
@@ -5969,6 +6015,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7769e7e0354163f4a9a29c228e2deece, type: 3}
+--- !u!1 &1533262607 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2890172464234655151, guid: 4a44f1e42ac6ac544b98ac42e0883662, type: 3}
+  m_PrefabInstance: {fileID: 2890172464584509692}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1539495972 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1183091703625825220, guid: 8e084b180021b4141a01120b6a029685, type: 3}
@@ -6689,7 +6740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea07c503a92f904689b4d9afcb06d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingPoints:
+  points:
   - {fileID: 1616705131}
   - {fileID: 1089392100}
   speed: 3
@@ -6818,7 +6869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea07c503a92f904689b4d9afcb06d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingPoints:
+  points:
   - {fileID: 1193391442}
   - {fileID: 1423579291}
   speed: 3
@@ -7053,7 +7104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea07c503a92f904689b4d9afcb06d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingPoints:
+  points:
   - {fileID: 284784782}
   - {fileID: 2078394503}
   speed: 3
@@ -7260,7 +7311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea07c503a92f904689b4d9afcb06d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingPoints:
+  points:
   - {fileID: 1336468432}
   - {fileID: 309941288}
   speed: 4
@@ -7401,7 +7452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea07c503a92f904689b4d9afcb06d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingPoints:
+  points:
   - {fileID: 874074145}
   - {fileID: 893385954}
   speed: 3
@@ -7659,7 +7710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea07c503a92f904689b4d9afcb06d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingPoints:
+  points:
   - {fileID: 92923861}
   - {fileID: 1150280616}
   speed: 3
@@ -7893,7 +7944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea07c503a92f904689b4d9afcb06d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingPoints:
+  points:
   - {fileID: 1708327368}
   - {fileID: 662931675}
   speed: 3
@@ -8294,6 +8345,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20d321b1ddf8e6c40ae499107131d264, type: 3}
+--- !u!1 &2138730133 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2890172464562052698, guid: 4a44f1e42ac6ac544b98ac42e0883662, type: 3}
+  m_PrefabInstance: {fileID: 1431428080}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2146493847 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3745447429151252658, guid: 884d9d5b1ff9303439330ddc8e9899b0, type: 3}
@@ -8509,6 +8565,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2890172464604893076, guid: 4a44f1e42ac6ac544b98ac42e0883662, type: 3}
+      propertyPath: points.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2890172464604893076, guid: 4a44f1e42ac6ac544b98ac42e0883662, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 1533262607}
+    - target: {fileID: 2890172464604893076, guid: 4a44f1e42ac6ac544b98ac42e0883662, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 514303428}
     - target: {fileID: 2890172464604893077, guid: 4a44f1e42ac6ac544b98ac42e0883662, type: 3}
       propertyPath: m_IsTrigger
       value: 1

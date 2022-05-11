@@ -14,4 +14,6 @@ public class ShowBridgeTwo : MonoBehaviour
             GetComponent<MeshCollider>().enabled = true;
         }
     }
+
+    //checks to see if both bridge checks are activated, if so then the bridge becomes visible and walkable
 }

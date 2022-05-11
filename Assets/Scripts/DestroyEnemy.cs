@@ -6,7 +6,8 @@ public class DestroyEnemy : MonoBehaviour
 {
     int enemy_health = 3;
 
-    // Start is called before the first frame update
+    // Code for all smaller enemies. Have three hits before they are dead. Can only
+    //be destroyed by bullets
     private void OnCollisionEnter(Collision col) {
         if(col.gameObject.tag == "Bullet") {
             enemy_health = enemy_health - 1;

@@ -13,4 +13,6 @@ public class RemoveWall : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
+    //checks if both big enemies have been defeated before removing wall allowing player to proceed
 }

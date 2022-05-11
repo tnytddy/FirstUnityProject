@@ -15,6 +15,8 @@ public class BridgeTwoCheck : MonoBehaviour
 
     }
 
+    //same as BridgeOneCheck
+
      private void OnCollisionEnter(Collision col) {
         if(col.gameObject.tag == "Bullet") {
           Destroy(col.gameObject);

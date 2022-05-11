@@ -7,7 +7,7 @@ public class ShowExit : MonoBehaviour
 {
     public CheckPoints script;
 
-    // Update is called once per frame
+    // checks if all four checks have been gathered before showing exit
     void Update()
     {
         if(script.checks >= 4) {

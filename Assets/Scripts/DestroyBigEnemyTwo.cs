@@ -7,7 +7,8 @@ public class DestroyBigEnemyTwo : MonoBehaviour
     int enemy_health = 10;
     public int enemys_left = 1;
 
-    // Start is called before the first frame update
+    //Same as DestroyBigEnemy, but this one actually gets to 0. Same concept though.
+    
     private void OnCollisionEnter(Collision col) {
         if(col.gameObject.tag == "Bullet") {
             enemy_health = enemy_health - 1;

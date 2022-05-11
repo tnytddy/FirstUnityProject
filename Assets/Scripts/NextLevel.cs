@@ -19,6 +19,6 @@ public class NextLevel : MonoBehaviour
 
     }
 
-    
-    
+    //checks if mesh renderer is on before allowing player to go to next level, otherwise they could go through
+    //even if the exit isnt visible    
 }

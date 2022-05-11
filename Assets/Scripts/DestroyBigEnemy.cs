@@ -7,7 +7,9 @@ public class DestroyBigEnemy : MonoBehaviour
     int enemy_health = 10;
     public int enemys_remaining = 2;
 
-    // Start is called before the first frame update
+    //for some reason this code, even if enemys_remaining is at 1, results in that
+    //variable being 1. So the code in the RemoveWall script is based aorund this issue.
+
     private void OnCollisionEnter(Collision col) {
         if(col.gameObject.tag == "Bullet") {
             enemy_health = enemy_health - 1;

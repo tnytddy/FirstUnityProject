@@ -15,4 +15,6 @@ public class ShowBridgeOne : MonoBehaviour
             GetComponent<MeshCollider>().enabled = true;
         }
     }
+
+    //checks if both bridge checks are active then allows player to see and walk on bridge
 }

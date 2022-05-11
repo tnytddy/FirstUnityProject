@@ -15,6 +15,9 @@ public class BridgeOneChecksPt2 : MonoBehaviour
 
     }
 
+    //works like the other bridge check. had to do two since it was two seperate objects to get the bridge
+    //to appear
+
      private void OnCollisionEnter(Collision col) {
         if(col.gameObject.tag == "Bullet") {
           Destroy(col.gameObject);

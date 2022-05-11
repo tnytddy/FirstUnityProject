@@ -15,6 +15,8 @@ public class BridgeOneChecks : MonoBehaviour
 
     }
 
+    //when hit by the bullet, the object will turn from purple to blue to indicate it is active
+
      private void OnCollisionEnter(Collision col) {
         if(col.gameObject.tag == "Bullet") {
           Destroy(col.gameObject);

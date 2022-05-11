@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GoneBullet : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //destroys the bullet in case it hits anything besides an enemy, since they would bounce off otherwise
    private void OnCollisionEnter (Collision collision) {
        if(collision.gameObject.tag == "Floor" || collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Moving Box") {
        Destroy(gameObject);
